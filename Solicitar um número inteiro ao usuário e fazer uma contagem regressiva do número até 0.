@@ -7,7 +7,7 @@ Rodrigo Dante Penhalves - 2AM
 int main()
 {
     int numero;
-    
+    //Entrada
     printf("Digite um numero: ");
     scanf("%d", &numero);
     
@@ -22,6 +22,7 @@ int main()
             printf("contagem %d \n", i);
         }
        }else{
+       //Saída
             for(int i = numero; i <= 0; i++) 
                 printf("contagem %d \n", i);
             }
