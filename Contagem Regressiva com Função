@@ -1,0 +1,36 @@
+/******************************************************************************
+Rodrigo Dante Penhalves 13/10/22
+ Contagem Regressiva com Função
+
+*******************************************************************************/
+
+#include <stdio.h>
+// ----------------------------------------
+void contagemPositiva (int n) {
+     for (int i=n; i >=0 ; i--) {
+         printf("\n%d",i);
+    }
+}
+// ----------------------------------------
+void contagemNegativa(int n) {
+    for (int i=n; i <=0 ; i++) {
+        printf("\n%d",i);
+    }
+}
+// ----------------------------------------
+void contagemRegressiva (int n) {
+    if (n>=0)   contagemPositiva(n);
+    else        contagemNegativa(n);
+}
+// ----------------------------------------
+int main() {
+    int n;
+    
+    // Entrada
+    printf ("Digite o valor de n: ");
+    scanf ("%d" , &n);
+    
+    // Saída de dados
+    contagemRegressiva (n);
+    return 0;
+}
