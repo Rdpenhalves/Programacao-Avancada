@@ -1,0 +1,28 @@
+/******************************************************************************
+Rodrigo Dante Penhalves - 2AM
+  Fazer um programa que leia uma idade em anos e apresente o total de dias que a pessoa está viva
+*******************************************************************************/
+#include <stdio.h>
+
+int main()
+{
+   int idade, dias;
+   
+   //entrada
+   printf("Digite sua idade: ");
+   scanf ("%d", &idade);
+   
+   //Validação da entrada
+   while(idade < 0 || idade > 120){
+       printf("A idade não é negativa. Digite novamente: ");
+       scanf("%d", &idade);
+       
+   }
+   
+   //Processamento
+   dias = idade * 365;
+   
+   //Saída
+   printf("Seu tempo de vida é: %d", dias);
+   
+}
