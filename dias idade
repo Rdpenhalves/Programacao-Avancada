@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int idade = 0, dias = 0;
+
+void diasIdade(int idade);
+
+int main()
+{
+//entrada
+    printf("Informe a sua idade: ");
+    scanf("%d", &idade);
+    while(idade > 150)
+    {
+        scanf("%d", &idade);
+    }
+    diasIdade(idade);
+}
+
+void diasIdade(int idade)
+{
+//processamento
+    dias = idade * 365;
+//saída
+    printf("A sua idade em dias é: %d", dias);
+}
